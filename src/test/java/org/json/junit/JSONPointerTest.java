@@ -395,10 +395,9 @@ public class JSONPointerTest {
      * When creating a jsonObject we need to parse escaped characters "\\\\"
      *  --> it's the string representation of  "\\", so when query'ing via the JSONPointer 
      *  we DON'T escape them
-     *  
      */
     @Test
-    public void queryFromJSONObjectUsingPointer0() {
+    public void multipleBackSlashHandling() {
     	String str = "{"+
                 "\"string\\\\\\\\Key\":\"hello world!\","+
 
