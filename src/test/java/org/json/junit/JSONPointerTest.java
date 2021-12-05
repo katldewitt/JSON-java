@@ -391,6 +391,7 @@ public class JSONPointerTest {
         assertTrue("Expected null", obj == null);
     }
     
+ // CS427 Issue link: https://github.com/katldewitt/JSON-java /issues/561
     /**
      * When creating a jsonObject we need to parse escaped characters "\\\\"
      *  --> it's the string representation of  "\\", so when query'ing via the JSONPointer 
